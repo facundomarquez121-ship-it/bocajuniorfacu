@@ -131,10 +131,10 @@ servidor.get("/articulos",
     }
 )
 
-servidor.get("/articulosdelrubro",
+servidor.post("/articulosdelrubro",
     function (req, respuesta) {
-        // el parámetro rubro está en la urldel requerimiento, lo averiguo con un query
-        let rubro = req.query.rubro;
+        // el parámetro rubro está en el body
+        let rubro = req.body.rubro;
         // escribir un querycon lo que queremos como respuesta
         const sql = "SELECT * FROM articulos where idrubro=?";
         // ejecutar el querysinparámetros
