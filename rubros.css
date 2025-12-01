@@ -1,0 +1,64 @@
+body {
+  background-image: url(imagenes/fondo2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Asegura que el body ocupe al menos toda la altura de la ventana */
+  min-height: 100vh;
+}
+
+/*  ESTILOS PARA PC (Dos columnas, Centradas) */
+.button {
+  gap: 50px;
+  /* Centrado: Usa margen automático y max-width para centrar el bloque */
+  margin: 50px auto 0;
+  max-width: 700px;
+  display: grid;
+  /* 2 columnas iguales en PC */
+  grid-template-columns: 1fr 1fr;
+}
+
+nav {
+  margin: 0;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: width 2s;
+
+  /* Ajuste de ancho y padding */
+  width: 100%;
+  padding: 30px;
+
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*  MEDIA QUERY PARA CELULARES (Una columna) */
+/* Aplica estos estilos cuando el ancho de la pantalla es de 600px o menos */
+@media (max-width: 600px) {
+  .button {
+    /* Cambia a una sola columna para que los botones se apilen */
+    grid-template-columns: 1fr;
+    /* Ocupa todo el ancho disponible en móvil */
+    max-width: 100%;
+    /* Centra el contenedor y le da un margen lateral de 20px */
+    margin: 50px 20px 0 20px;
+    gap: 20px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 18px;
+    /* Aseguramos que el texto esté centrado en los botones */
+    text-align: center;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+}

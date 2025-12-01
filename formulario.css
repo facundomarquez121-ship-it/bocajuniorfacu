@@ -1,0 +1,51 @@
+fieldset{
+    border: none;      /* Quita el borde por defecto del fieldset */
+    display: grid;     /*para definir filas y columnas*/
+    grid-template-columns: auto;
+    gap: 10px 10px; /*espacio entre filas y columnas*/
+    align-items: center;
+    border-radius: 10px;
+}
+
+form {
+    max-width: 40vw; /* Ancho máximo del formulario para que no sea muy grande y responsive*/
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    background-color: rgb(161, 247, 218);
+}
+
+legend {
+    grid-column: auto;
+    font-size: 20px;
+    margin-bottom: 5px; /* Espacio hacia abajo del título */
+    text-align: center; /* Centra el texto al medio */
+}
+
+textarea {
+  resize: none; /* Evita que el usuario arrastre la esquina para cambiar su tamaño */
+  width: 100%; /* Opcional: para que ocupe todo el ancho disponible */
+  height: 70px; /* Opcional: define una altura fija inicial */
+}
+
+/* Estilos aplicados solo para pantallas pequeñas (móviles) de 600px o menos */
+@media screen and (max-width: 600px) {
+  /* Hago que el formulario ocupe un porcentaje grande en móviles */
+  form {
+    max-width: 90vw; /* 90% del ancho de la pantalla */
+    margin: 10px auto; /* Reduzco el margen superior/inferior */
+  }
+
+  /* Aseguro que el tamaño de fuente sea cómodo en móviles */
+  body {
+    font-size: 16px;
+  }
+}

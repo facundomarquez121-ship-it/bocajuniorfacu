@@ -1,0 +1,117 @@
+/* Reset básico */
+section {
+    margin: 1px;
+    padding: 1px;
+    background-color: #000000;
+    border: solid;
+    border-radius: 5px;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #dff32b;
+    color: #222;
+}
+
+/* Encabezado */
+header {
+    background-color: #002244;
+    color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #002244;
+    color: #ffcc00;
+    margin-top: 30px;
+}
+
+#grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* eso significa 3 columnas iguales*/
+   
+    background-color: rgb(33, 37, 243);
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 4px;
+}
+
+.caja {
+    background-color: rgb(255, 255, 255);
+    margin: 6px;/*exterior*/
+    padding: 3px;/*interior*/
+    border-radius: 5px;
+    font-family:'Times New Roman', Times, serif
+}
+
+.imagen {
+    width: 150px;
+    height: 150px;
+    
+}
+
+.precio {
+    text-align: center;
+}
+.descripcion{ 
+    text-align: center;
+}
+
+img {
+  max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos por defecto para pantallas grandes (PC) */
+.columna {
+  width: 30%;
+  float: left;
+}
+
+/* Estilos aplicados solo para pantallas pequeñas (móviles) de 600px o menos */
+@media screen and (max-width: 600px) {
+  .columna {
+    width: 100%; /* Las columnas ocupan todo el ancho, apilándose */
+    float: none;
+  }
+}
+
+img {
+  max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos por defecto para pantallas grandes (PC) */
+.columna {
+  width: 30%;
+  float: left;
+}
+
+/* Estilos aplicados solo para pantallas pequeñas (móviles) de 600px o menos */
+@media screen and (max-width: 600px) {
+  .columna {
+    width: 100%; /* Las columnas ocupan todo el ancho, apilándose */
+    float: none;
+  }
+}

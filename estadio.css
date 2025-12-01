@@ -1,0 +1,93 @@
+* Reset básico */
+section {
+    margin: 1px;
+    padding: 1px;
+    background-color: #000000;
+    border: solid;
+    border-radius: 5px;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(imagenes/bomboneraHD.jpeg);
+    color: #222;
+    background-size: cover;
+  /* Ajusta la imagen para cubrir todo el contenedor */
+  background-position: center;
+  /* Centra la imagen */
+  background-repeat: no-repeat;
+  /* Evita que la imagen se repita */
+
+}
+
+/* Encabezado */
+header {
+    background-color: #002244;
+    color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    border: solid; border-color: black;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: solid;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #002244;
+    color: #ffcc00;
+    margin-top: 30px;
+}
+
+img {
+  max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos por defecto para pantallas grandes (PC) */
+.columna {
+  width: 30%;
+  float: left;
+}
+
+/* Estilos aplicados solo para pantallas pequeñas (móviles) de 600px o menos */
+@media screen and (max-width: 600px) {
+  .columna {
+    width: 100%; /* Las columnas ocupan todo el ancho, apilándose */
+    float: none;
+  }
+}

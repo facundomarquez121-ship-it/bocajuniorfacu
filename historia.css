@@ -1,0 +1,66 @@
+/* Reset básico */
+section {
+    margin: 1px;
+    padding: 1px;
+    background-color: #000000;
+    border: solid;
+    border-radius: 5px;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-image: url(imagenes/escudoboca.png);
+}
+
+/* Encabezado */
+header {
+    background-color: #002244;
+    color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    border: solid; border-color: black;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #002244;
+    color: #ffcc00;
+    margin-top: 30px;
+}
